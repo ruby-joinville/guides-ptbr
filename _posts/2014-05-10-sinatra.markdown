@@ -217,7 +217,7 @@ Se você está guardando seus parâmetros corretamente, você deve conseguir rec
 
 ## *6.* Arrumando tudo
 
-Aquele grande pedaço de HTML no seu código `get` está dificultando a visualização do que o seu app faz. Vamos movê-lo para o seu próprio método.
+Aquele grande pedaço de HTML no seu código `get` está dificultando a view do que o seu app faz. Vamos movê-lo para o seu próprio método.
 
 Tire o formulário HTML do seu código `get` e cole em um método chamado `template` (mantenha todo o seu código no mesmo arquivo). Tipo assim:
 

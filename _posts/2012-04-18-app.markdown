@@ -177,7 +177,7 @@ Pressione as teclas <kbd>Ctrl</kbd>+<kbd>C</kbd> no terminal para parar o servid
 
 ## *2.* Criar o Scaffold para as ideias
 
-Vamos usar uma funcionalidade do Rails denominada scaffold para criar um ponto de partida que nos permitirá listar, adicionar, remover, editar e ver as "coisas"; no nosso caso as "coisas" serão as ideias.
+Vamos usar uma funcionalidade do Rails denominada scaffold, que como a palavra diz, serve como um andaime para a nossa aplicação. Este comando gera os arquivos seguindo a arquitetura de aplicativos Rails, o que dá um ponto de partida que nos permitirá listar, adicionar, remover, editar e ver as ideias.
 
 **Coach:** O que é Rails scaffolding? (Explicar o comando, o nome do modelo, as tabelas de banco de dados relacionadas, as convenções de nomes, atributos, tipos, etc.) O que é migração e por que são necessárias?
 
@@ -198,7 +198,7 @@ Teste o que você tem rodando estes comandos no terminal.
 
 ## *3.* Design
 
-**Coach:** Fale sobre o relacionamento entre HTML e Rails. Quais são as visualizações geradas por HTML e quais são as geradas por Embedded Ruby (ERB)? O que é MVC e como ele se relaciona no contexto? (Modelos e controllers são responsáveis por gerar visualizações com HTML.)
+**Coach:** Fale sobre o relacionamento entre HTML e Rails. Quais são as views geradas por HTML e quais são as geradas por Embedded Ruby (ERB)? O que é MVC e como ele se relaciona no contexto? (Modelos e controllers são responsáveis por gerar views com HTML.)
 
 Nossa app apresenta um design bem pobre por enquanto. Vamos providenciar melhorias nesse visual. Vamos usar o projeto Twitter Bootstrap para estilizar de uma maneira fácil nossa app.
 
@@ -368,7 +368,7 @@ por
 <%= form_for(idea, html: {multipart: true}) do |form| %>
 {% endhighlight %}
 
-No seu navegador adicione uma nova ideia e junto com isso adicione uma imagem. Esta ação fará com que seja mostrada, não a imagem, mas o caminho para a imagem. Vamos corrigir isto.
+No seu navegador adicione uma nova ideia e junto com isso adicione uma imagem. Note que essa ação fará com que o caminho da imagem, não a imagem em si, seja mostrada. Vamos corrigir isto.
 
 Abra `app/views/ideas/show.html.erb` e substitua:
 
