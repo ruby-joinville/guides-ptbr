@@ -6,16 +6,16 @@ permalink: thumbnails
 
 # Criando thumbnails com Carrierwave
 
-*Criado por Miha Filej, [@mfilej](https://twitter.com/mfilej)*  
+*Criado por Miha Filej, [@mfilej](https://twitter.com/mfilej)*
 *Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
 
 __Coach__: Explicar qual o efeito de se definir a largura de uma imagem na marcação HTML como explicado no final do passo 4, constante do tutorial *Tutorial para criação da app Rails Girls*.
 
 ## *1.*Instalando ImageMagick
 
-* OS X: rode `brew install imagemagick`. Se o comando brew não estiver disponível no seu terminal, instale [install Homebrew here][in-homebrew].
-* Windows: faça o download e rode o [ImageMagick installer][im-win] (use o primeiro link do  *download* ).
-* Linux: em Ubuntu e Debian, rode `sudo apt-get install imagemagick`. Use o gerenciador de package apropriado em lugar de `apt-get` para as demais distribuições Linux.
+* OS X: execute `brew install imagemagick`. Se o comando brew não estiver disponível no seu terminal, instale [install Homebrew here][in-homebrew].
+* Windows: faça o download e execute o [ImageMagick installer][im-win] (use o primeiro link do  *download* ).
+* Linux: em Ubuntu e Debian, execute `sudo apt-get install imagemagick`. Use o gerenciador de package apropriado em lugar de `apt-get` para as demais distribuições Linux.
 
   [im-win]: http://www.imagemagick.org/script/binary-releases.php?ImageMagick=vkv0r0at8sjl5qo91788rtuvs3#windows
   [in-homebrew]: http://mxcl.github.io/homebrew/
@@ -34,13 +34,13 @@ logo após a linha
 gem 'carrierwave'
 {% endhighlight %}
 
-No Terminal rode:
+No Terminal execute:
 
 {% highlight sh %}
 bundle
 {% endhighlight %}
 
-## *2.*Dizendo para a app criar um thumbnail quando uma imagem for enviada ao servidor
+## *2.*Instruindo para a app criar um thumbnail quando uma imagem for enviada ao servidor
 
 Abra `app/uploaders/picture_uploader.rb` e encontre a linha conforme mostrada a seguir:
 
