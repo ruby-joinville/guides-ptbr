@@ -6,12 +6,12 @@ permalink: heroku
 
 # Publique sua aplicação com Heroku
 
-*Criado por Terence Lee, [@hone02](https://twitter.com/hone02)*  
+*Criado por Terence Lee, [@hone02](https://twitter.com/hone02)*
 *Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
 
 ### Instale Heroku
 
-Siga os passos intitulados "Introduction" e "Set up" constantes na página
+Siga os passos intitulados "Introduction" e "Set up" na página
 [Getting Started on Heroku with Ruby][heroku-guide] para se cadastrar, instalar Heroku CLI e fazer login.
 
 __COACH__: Fale sobre os benefícios do uso da plataforma Heroku para publicação vs uso de servidores tradicionais.
@@ -45,18 +45,6 @@ Não se esqueça de fazer `git add .` e `git commit -m "Utilizando postgres como
 para adicionar esta mudança ao seu branch master antes de enviar ao heroku mais tarde.
 
 __COACH__: Você pode falar sobre RDBMS e as diferenças para outros sistemas de gerenciamento bem como  apresentar alguns detalhes das dependências em Heroku no PostgreSQL.
-
-#### Sistema de controle de versão
-
-Para começar vamos adicionar nosso código em um sistema de controle de versão. Você pode fazer isso executando os seguintes comandos no terminal:
-
-{% highlight sh %}
-git init
-git add .
-git commit -m "initial commit"
-{% endhighlight %}
-
-__COACH__: Agora é uma ótima oportunidade para falar sobre sistemas de controle de versão e git.
 
 ### Publicando sua app
 
