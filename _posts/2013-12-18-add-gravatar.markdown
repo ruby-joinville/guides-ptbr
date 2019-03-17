@@ -6,7 +6,7 @@ permalink: gravatar
 
 # Adicionando Gravatar para a aplicação
 
-*Criado por Catherine Jones*  
+*Criado por Catherine Jones*
 *Traduzido por Anderson Fernandes, [@andersonfernandes](https://github.com/andersonfernandes)*
 
 Este tutorial assume que você já construiu uma aplicação do Rails Girls seguindo este [tutorial](http://guides.railsgirls.com/app) e adicionou autenticação usando o [Devise](http://guides.railsgirls.com/devise/).
@@ -29,7 +29,7 @@ No terminal rode
 bundle install
 {% endhighlight %}
 
-Isto irá instalar a gem gravtastic. Então lembre de reiniciar seu servidor do rails.
+Isto irá instalar a gem `gravtastic`. Então lembre de reiniciar seu servidor do rails.
 
 ## *2.* Configurando o Gravatar na sua aplicação
 
