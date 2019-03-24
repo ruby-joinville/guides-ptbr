@@ -52,13 +52,13 @@ Então, nós criaremos um arquivo chamado `manifest.yml` no diretório principal
 cf push
 {% endhighlight %}
 
-Isso irá disparar o  primeiro deploy para o anynimes. A gem cf irá notar que não existe `manifest.yml`e irá pedir-lhe um conjunto  padrão de perguntas de configuração, tais como o número e tamanho da memória desejado de suas instâncias de aplicativos, se e quais serviços para se ligarem à eles e mais importante, se você deseja armazenar essas informações.
+Isso irá disparar o primeiro deploy para o anynimes. A gem `cf` irá notar que não existe `manifest.yml`e irá pedir-lhe um conjunto  padrão de perguntas de configuração, tais como o número e tamanho da memória desejado de suas instâncias de aplicativos, se e quais serviços para se ligarem à eles e mais importante, se você deseja armazenar essas informações.
 
 Por favor, responda a esta pergunta com um "hell yes" uma vez que o desejado arquivo `manifest.yml` será criado!
 
 Uma vez que o seu push foi com sucesso, você deve ser capaz de acessar a sua aplicação utilizando um browser de sua escolha, o que significa que você está pronta para configurar o Travis!
 
-Por agora, nós não temos 'testes reais', então iremos adiante e criaremos um arquivo de configuração do Travis que irá falsificar um conjunto de testes de sucesso. Por favor, vá para o diretório local do seu app e crie um arquivo ``.travis.yml``. No momento, cole o seguinte conteúdo. Vamos adicionar mais algumas informações mais tarde
+Por agora, nós não temos 'testes reais', então iremos adiante e criaremos um arquivo de configuração do Travis que irá falsificar um conjunto de testes de sucesso. Vá para o diretório local do seu app e crie um arquivo ``.travis.yml``. No momento, cole o seguinte conteúdo. Vamos adicionar mais algumas informações mais tarde
 
 {% highlight sh %}
 language: ruby
@@ -113,7 +113,7 @@ deploy:
 
 Não esqueça de comitar e enviar suas mudanças para ``.travis.yml`` uma vez que será necessário em seu repositório Github para fazer efeito.
 
-De agora em diante, sempre que você cometer alterações ao seu repositório GitHub, os testes serão executados e sua aplicação será implantada. O Travis irá então mostrar uma saída de log semelhante a esta:
+De agora em diante, sempre que você realizar alterações ao seu repositório GitHub, os testes serão executados e sua aplicação será implantada. O Travis irá então mostrar uma saída de log semelhante a esta:
 
 {% highlight sh %}
 Installing deploy dependencies

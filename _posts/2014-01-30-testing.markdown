@@ -6,7 +6,7 @@ permalink: testing-rspec
 
 # Teste sua aplicação com RSpec
 
-*Criado por Clemens Helm, [@clemenshelm](https://twitter.com/clemenshelm) e Floor Drees, [@floordrees](https://twitter.com/floordrees)*  
+*Criado por Clemens Helm, [@clemenshelm](https://twitter.com/clemenshelm) e Floor Drees, [@floordrees](https://twitter.com/floordrees)*
 *Traduzido por Marina Limeira, [@marinalimeira_](https://www.twitter.com/marinalimeira_)*
 
 RSpec é um framework para testes em Ruby, que descreve o comportamento da nossa aplicação em uma sintaxe que não se parece muito com Ruby. Ele irá mostrar o resultado dos testes no seu terminal.
@@ -83,7 +83,7 @@ o que parece muito melhor, mas existe muita mágica envolvida. Por agora provave
 
 __COACH__: Fale sobre refatoramento.
 
-#### Marcando os testes como a fazer
+#### Marcando os testes como "pendentes"
 
 Sim! Listas de coisas a fazer. Maravilhoso. Uma boa funcionalidade do RSpec é a possibilidade de marcar alguns testes como pendente.
 
@@ -137,7 +137,5 @@ describe Attendee do
   it "testa tudo"
 end
 {% endhighlight %}
-
-Apenas dizendo.
 
 Feliz testes!

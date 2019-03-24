@@ -15,7 +15,7 @@ As instruções para criar a app foram descritas [neste documento](/app).
 
 ## *1.*Criando o scaffold para a área de comentários
 
-Crie o scaffold para a área de comentários fazendo nele constar o nome de quem comenta, o corpo do comentário (conteúdo do comentário) e uma referência para a tabela ideas (`idea_id`).
+Crie o scaffold para a área de comentários fazendo nele constar o nome de quem comenta, o corpo do comentário (conteúdo do comentário) e uma referência para a tabela "ideas" (`idea_id`).
 {% highlight sh %}
 rails g scaffold comment user_name:string body:text idea_id:integer
 {% endhighlight %}
@@ -26,7 +26,7 @@ rake db:migrate
 
 ## *2.*Adicione relacionamentos aos modelos
 
-Você precisa assegurar que Rails seja capaz de identificar a conexão entre objetos (ideas e comentários). De vez que uma idea pode ter vários comentários precisamos assegurar que o modelo ideas sabe disso. Abra app/models/idea.rb e logo após a linha:
+Você precisa assegurar que o Rails seja capaz de identificar a "conexão" entre objetos (ideas e comentários). De vez que uma idea pode ter vários comentários precisamos assegurar que o modelo ideas sabe disso. Abra `app/models/idea.rb` e logo após a linha:
 {% highlight ruby %}
 class Idea &lt; ActiveRecord::Base
 {% endhighlight %}
@@ -47,7 +47,7 @@ belongs_to :idea
 
 ## *3.*Mostrar o formulário de comentários e os comentários existentes
 
-Abra app/views/ideas/show.html.erb é depois da tag de imagem (image_tag)
+Abra `app/views/ideas/show.html.erb` e depois da tag de imagem (image_tag)
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 {% endhighlight %}
